@@ -33,7 +33,7 @@
                 .then(data => {
                     const rows = data.split('\n').filter(row => row.trim() !== '');
                     let totalSales = 0;
-                    let productSalesData = [];
+                    const productSalesData = [];
 
                     // Skip header row
                     if (rows.length > 0) {
